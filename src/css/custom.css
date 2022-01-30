@@ -1,0 +1,844 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+.tm-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 3px dashed rgb(0, 194, 255);
+    border-top: 3px dashed rgb(0, 194, 255);
+}
+.tm-content .intro-sect h2 {
+    
+  	text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+  
+  
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+.tm-content .sect-proph h2 {
+    
+  	text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+  
+  
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+.tm-content .sect-newbible h2 {
+    
+  	text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+  
+  
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+.tm-content .sect-bible h2 {
+    
+  	text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+  
+  
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+
+/* Библейские сюжеты начало */
+.bs-grey {
+  color:grey;
+  text-align: center;
+}
+.bs-grey a {
+ color:grey; 
+}
+.bs-quote {
+  padding-left:50px;
+  font-style: italic;
+}
+.bs-numb {
+  color: grey;
+}
+.bs-container {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.bssect {
+      padding: 70px 0;
+    }
+
+    .bssect-title {
+      border-bottom: none !important;
+      border-top: none !important;
+      text-align: center;
+    }
+
+    .bssect-desc {
+      color: #868686;
+	  line-height:1.8;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .bssect-img {}
+
+    .bscards-panel {
+      background: #f7f7f7;
+      color: #666;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      margin-bottom: 39px !important;
+    }
+
+    .bscards-title {
+      margin-bottom: 20px;
+      font-size: 19px;
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: none;
+      color: #5d5955;
+    }
+
+    .bscards-image {
+      min-height: 200px;
+    }
+
+    .bscards-text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #ACACAC;
+    }
+
+    .bscards-link {}
+/* Библейские сюжеты конец */
+.bs-sect-jesus {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 202px 0;
+    background-image: url(/images/bs/bg/bsjesus.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.tm-content .bs-sect-jesus h2 {
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+
+.bs-sect-jesus h2 {
+    font-size: 68px;
+    line-height: 1.2;
+    color: white;
+}
+.bs-sect-jesus a {
+    display: inline-block;
+    padding: 10px;
+    border: 4px solid white;
+    color: white;
+    font-size: 18px;
+}
+/* Библейские сюжеты главная */
+
+
+/* Библейские сюжеты главная конец */
+
+
+/* Фон для лого на заглавной */
+
+.tm-headerbar {
+    
+    position: relative;
+  	overflow: hidden;
+}
+.tm-headerbar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: url(/images/bg/planet960.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.tm-headerbar::after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(2, 2, 2, 0.11);
+}
+.tm-logo {
+    display: block;
+    padding: 120px 0 100px;
+}
+.tm-logo p {
+    position: relative;
+    z-index: 1111;
+}
+/* Конец фона для лого на заглавной*/
+/* Лендинг */
+
+.intro-sect {
+    margin-bottom: 30px;
+}
+.intro-sect h2 {
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+.intro-sect p {
+    color: grey;
+    padding: 9px 15px 30px 16px;
+    font-size: 14px;
+}
+.sect-lastdays {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 202px 0;
+    background-image: url(/images/bg/extra960.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.sect-lastdays h3 {
+    font-size: 68px;
+    line-height: 1.2;
+    color: white;
+    text-align: left;
+    padding-left: 40px;
+}
+@media screen and (max-width: 435px) {
+    .sect-lastdays h3 {
+        font-size: 45px;
+        
+    }
+}
+.sect-lastdays-button-area {
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+.sect-lastdays-button-area a {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;
+    line-height: 1.2;
+    border-radius: 33px;
+    color: #615f5f;
+    border: 4px solid #615f5f;
+}
+.sect-lastdays-button-area a:hover {
+    color: white;
+    background: #615f5f;
+    border-color: white;
+}
+.sect-proph {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f5f5f5
+}
+.sect-proph img {
+    border-radius: 50%;
+}
+.sect-proph h2 {
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+.sect-proph h3 {
+    margin-bottom: 20px !important;
+}
+.sect-proph h3:hover {
+    color: #0095fb;
+}
+.sect-proph a:hover {
+    color: #0095fb;
+}
+.sect-proph .uk-grid-divider {
+    margin-top: 15px;
+    margin-bottom: 54px;
+}
+.sect-newbible {
+    margin-bottom: 40px;
+}
+.sect-newbible h2 {
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 30px;
+    padding: 100px 0;
+    background: #0095fb;
+    color: white;
+    font-size: 56px;
+    line-height: 1.2;
+    text-align: center;
+}
+.sect-newbible h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #0095fb;
+}
+.sect-newbible img {
+    width: 100%;
+}
+.sect-newbible li {
+    display: inline-block;
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+}
+.sect-bq {
+    margin-left: -30px;
+    margin-right: -30px;
+    background: #696969;
+    color: white;
+    padding: 100px;
+    font-size: 35px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .sect-bq {
+         padding: 40px;
+      font-size:24px;
+        
+    }
+}
+.sect-bq a {
+    color: white;
+}
+.sect-proverbs {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+.sect-proverbs img {
+    width: 100%;
+}
+.sect-proverbs-item {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.sect-proverbs-item:hover {
+    background: #0095fb;
+}
+.sect-proverbs-item:hover a {
+    color: white;
+}
+.sect-proverbs-item p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.sect-proverbs-item a {
+    font-size: 35px;
+    color: black;
+}
+.sect-proverbs-item a:hover {
+    font-size: 35px;
+    color: white;
+}
+@media screen and (max-width: 479px) {
+    .sect-proverbs-item {
+        min-height: 300px;
+    }
+    .sect-proverbs-item a {
+        font-size: 35px;
+        color: black;
+    }
+}
+@media screen and (max-width: 627px) {
+    .sect-proverbs-item a {
+        font-size: 20px;
+        color: black;
+    }
+}
+@media screen and (max-width: 479px) {
+    .sect-proverbs-item a {
+        font-size: 35px;
+        color: black;
+    }
+}
+.sect-bible {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 202px 0;
+    background-image: url(/images/bg/bible960.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.sect-bible h2 {
+    font-size: 68px;
+    line-height: 1.2;
+    color: white;
+}
+.sect-bible a {
+    display: inline-block;
+    padding: 10px;
+    border: 4px solid white;
+    color: white;
+    font-size: 18px;
+}
+.sect-bible a:hover {
+    border: 4px solid grey;
+    background: white;
+    color: grey;
+    text-decoration: none;
+}
+.sect-about-bible {
+    color: grey;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.sect-about-bible h3 {
+    text-align: right;
+    font-size: 32px;
+    color: #797575;
+    padding-right: 26px;
+    margin-bottom: 20px !important;
+}
+.sect-about-bible .uk-grid-divider {
+    margin: 37px 0;
+}
+@media screen and (max-width: 767px) {
+    .sect-about-bible h3 {
+        text-align: left;
+        font-size: 32px;
+        color: #797575;
+        padding-right: 26px;
+        margin-bottom: 20px !important;
+    }
+    .sect-about-bible .uk-grid-divider {
+        margin: 25px auto;
+    }
+    .sect-about-bible-2div {
+        margin-top: 40px;
+    }
+}
+/* Конец лендинга */
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic&subset=latin,cyrillic);
+body {
+    font-family: 'Andika', sans-serif;
+}
+body {
+    color: #333;
+}
+em {
+    color: #387AB5;
+}
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+/* blocquote*/
+
+blockquote {
+    margin-left: 5%;
+    border-left: 5px solid #dcdcdc;
+    font-size: 13px;
+    line-height: 22px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px #d6d6d6;
+}
+blockquote p {
+    padding: 9px;
+    color: #414345;
+    font-style: normal;
+    font-family: Roboto;
+}
+@media only screen and (max-width: 500px) {
+    blockquote p {
+        padding: 5px;
+    }
+}
+/* Убираем ссылки из главного меню*/
+
+.itemstati,
+.itemblog,
+.iteminstr {
+    display: none !important;
+}
+/* Заголовки в навигаторе*/
+
+.navigatornagornaya h3 {
+    font-weight: bold;
+    background-color: #e08484;
+    color: white;
+    padding-left: 10px;
+}
+/* Заголовки в навигаторе*/
+
+.navigatorstati ul {
+    background-color: #F1F1F1;
+    padding: 10px;
+    list-style-type: none;
+}
+.navigatorstati li {
+    line-height: 20px;
+    border-left: 2px solid #CACACA;
+    font-size: 14px;
+    padding-left: 10px;
+}
+planb p {
+    border-top: 1px solid #9E9B9B;
+    padding: 10px;
+    font-weight: bold;
+}
+.historical {
+    background-color: #dddeff;
+    padding: 15px;
+    border: 2px solid #C4C1E1;
+}
+.actualno {
+    background-color: #e3f1fb;
+    padding: 25px;
+    border-top: 5px solid #00BEF7;
+    border-bottom: 5px solid #00BEF7;
+}
+.mainfact {
+    border: 3px dashed;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.mainidea {
+    border: 10px solid #eee;
+    margin: 0;
+    padding: 15px;
+    color: #333333;
+    font-weight: bold;
+}
+.parallelidea {
+    background-color: beige;
+    padding: 10px;
+    border: 4px solid #E3E382;
+}
+.fparallelidea {
+    background-color: #edf0b9;
+    padding: 25px;
+    border-top: 5px solid #efdea5;
+    border-bottom: 5px solid #efdea5;
+    text-align: center;
+}
+.tm-content img {
+    max-width: 100%;
+}
+ul.menunavigator {
+    list-style: none;
+    background-color: #D0EEFF;
+    padding: 20px;
+    border: 1px solid black;
+}
+.menunavigator li {
+    display: inline;
+}
+.menunavigator a {
+    display: inline-block;
+    padding: 2px 2px 2px 2px;
+    font-size: larger;
+}
+.bld {
+    font-weight: bold
+}
+.bldital {
+    font-weight: bold;
+    font-style: italic;
+}
+.marker {
+    background: #fde866;
+}
+.markerbld {
+    font-weight: bold;
+    background: #fde866;
+}
+.stnav {
+    font-weight: bold;
+}
+.emo {
+    background-color: #FFFFE1;
+    padding: 15px;
+    border: 1px dashed red;
+}
+h3 {
+    font-weight: bold;
+}
+body {
+    font-size: 16px;
+    line-height: 1.45;
+}
+.soderganie {
+    background: #f9f9f9;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+    background-blend-mode: soft-light, screen;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin-bottom: 1em;
+    width: auto;
+    display: table;
+    font-size: 95%;
+}
+#xmap {
+    background-color: white;
+    padding: 30px;
+}
+.categories-list {
+    background-color: white;
+    padding: 30px;
+}
+.content-category {
+    background-color: white;
+    padding: 30px;
+}
+.pdst {
+    font-weight: bold;
+    padding-left: 15px;
+}
+.bq {
+    background-color: #fffde9;
+    border: 1px solid brown;
+    color: brown;
+    padding: 10px;
+}
+
+.tag-count {
+    font-size: 17px;
+}
+/* Таблицы для притч - начало! */
+
+.CSSTableGenerator {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #000000;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.CSSTableGenerator table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.CSSTableGenerator tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.CSSTableGenerator tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.CSSTableGenerator tr:hover td {
+    background-color: #e5e5e5;
+}
+.CSSTableGenerator td {
+    vertical-align: middle;
+    background: -o-linear-gradient(bottom, #ffffff 5%, #e5e5e5 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e5e5e5));
+    background: -moz-linear-gradient( center top, #ffffff 5%, #e5e5e5 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#e5e5e5");
+    background: -o-linear-gradient(top, #ffffff, e5e5e5);
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-width: 0px 1px 1px 0px;
+    text-align: left;
+    padding: 7px;
+    /*font-size:12px;*/
+    
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}
+.CSSTableGenerator tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+.CSSTableGenerator tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td {
+    background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2));
+    background: -moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");
+    background: -o-linear-gradient(top, #cccccc, b2b2b2);
+    background-color: #cccccc;
+    border: 0px solid #000000;
+    text-align: center;
+    border-width: 0px 0px 1px 1px;
+    /*font-size:16px;*/
+    
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+}
+.CSSTableGenerator tr:first-child:hover td {
+    background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2));
+    background: -moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");
+    background: -o-linear-gradient(top, #cccccc, b2b2b2);
+    background-color: #cccccc;
+}
+.CSSTableGenerator tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+/* Таблицы для притч - конец! */
+
+.article-title {
+    text-align: center !important;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    display: inline-block;
+    text-decoration: underline;
+}
+.article-god {
+    background: url(/images/allarticle/article-god.jpg);
+}
+.article-сhristianity {
+    background: url(/images/allarticle/article-hristianity.jpg);
+}
+.article-dark {
+    background: url(/images/allarticle/article-dark.jpg);
+}
+.article-bible {
+    background: url(/images/allarticle/article-bible.jpg);
+}
+.article-holydays {
+    background: url(/images/allarticle/article-holidays.jpg);
+}
+.article-overlay {
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: all 0.35s ease-out;
+    transform: scale(0);
+    width: 100%;
+    height: 100%;
+}
+.article-overlay-info {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 30px;
+}
+.allarticle {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.allarticle:hover .article-overlay {
+    transform: scale(1);
+}
+
+/* Анимация бэкграунда */
+@-webkit-keyframes zoomInBg {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+		        transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+@keyframes zoomInBg {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+		        transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+.tm-headerbar::before {
+	-webkit-animation: zoomInBg 60s infinite;
+	        animation: zoomInBg 60s infinite;
+}
+
+/* Убрал поля в разрешении меньше 480px */
+@media screen and (max-width: 479px) {
+.uk-container {padding: 0;}
+
+}
