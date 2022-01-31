@@ -111,10 +111,19 @@
   <main style="background-color: white;">
     <div class="container">
       {{ content | safe }}
+      {% block main_footer %}
+      {% endblock %}
     </div>
 
   </main>
-  <footer></footer>
+  <footer class="tm-footer">
+    <div class="container">
+
+      <a class="tm-totop-scroller" data-uk-smooth-scroll="" href="#"></a>
+
+    </div>
+
+  </footer>
   <script src="/js/jquery.min.js" type="text/javascript"></script>
   <script src="/js/bootstrap.min.js" type="text/javascript"></script>
   <!-- Подсветка стихов из Библии. Посетите http://ref.bble.ru/ для более детальной настройки. Данный код необходимо вставить непосредственно перед закрывающимся тегом </body> -->
