@@ -13,102 +13,56 @@
   <!-- favicons -->
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/favicon.ico">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 
   <!-- TODO link:real canonical -->
   <!-- TODO проверить как выводятся метатеги без значения -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
   <link rel="stylesheet" href="/css/theme.css">
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav data-uk-sticky="{showup:true}" class="tm-navbar uk-navbar" style="margin: 0px;">
-
-      <ul class="uk-navbar-nav uk-hidden-small">
-        <li class="uk-active">
-          <a href="/">Тайны Библии</a>
-        </li>
-        <li>
-          <a href="/nashe-video">Наше видео</a>
-        </li>
-        <li>
-          <a href="/blog-main">Блог</a>
-        </li>
-        <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false">
-          <a href="/stati" class="itemstati">Статьи</a>
-          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
-            <div class="uk-grid uk-dropdown-grid">
-              <div class="uk-width-1-1">
-                <ul class="uk-nav uk-nav-navbar">
-                  <li>
-                    <a href="/stati/tajny">Тайны</a>
-                  </li>
-                  <li>
-                    <a href="/stati/dukhovnyj-navigator">Духовный Навигатор</a>
-                  </li>
-                  <li>
-                    <a href="/stati/biblejskie-voprosy">Библейские вопросы</a>
-                  </li>
-                  <li>
-                    <a href="/stati/istoriya-khristianstva">История христианства</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false">
-          <a href="/instrumenty" class="iteminstr">Инструменты</a>
-          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
-            <div class="uk-grid uk-dropdown-grid">
-              <div class="uk-width-1-1">
-                <ul class="uk-nav uk-nav-navbar">
-                  <li>
-                    <a href="/instrumenty/plan">План</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false">
-          <a href="/bs">Библейские сюжеты</a>
-          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" aria-hidden="true" style="top: 70px; left: 0px;" tabindex="">
-            <div class="uk-grid uk-dropdown-grid">
-              <div class="uk-width-1-1">
-                <ul class="uk-nav uk-nav-navbar">
-                  <li>
-                    <a href="/bs/pritchi-iisusa">Притчи Иисуса</a>
-                  </li>
-                  <li>
-                    <a href="/bs/alfa-bibliya">Альфа Библия</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="/karta-sajta">Карта сайта</a>
-        </li>
-      </ul>
-      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
-
-
-
-    </nav>
+<body class="page">
+  <header class="page__header">
+    <div class="navbar">
+      <div class="navbar__container container">
+        <a class="navbar__logo" href="/">Тайны Библии</a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/nashe-video">Наше видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/blog-main">Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/stati">Статьи</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/instrumenty">Инструменты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/bs">Библейские сюжеты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/karta-sajta">Карта сайта</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nabar__menu-toggler">
+          <span class="visually-hidden">Переключатель состояния меню</span>
+        </button>
+      </div>
+    </div>
   </header>
-  <main style="background-color: white;">
+  {% block main %}
+  <main class="page__main">
     <div class="container">
       {{ content | safe }}
       {% block main_footer %}
@@ -116,16 +70,17 @@
     </div>
 
   </main>
+  {% endblock %}
   <footer class="tm-footer">
     <div class="container">
-
+      <p>Тайны Библии. Новое понимание писания (Даниила 12:4)</p>
       <a class="tm-totop-scroller" data-uk-smooth-scroll="" href="#"></a>
-
     </div>
 
   </footer>
   <script src="/js/jquery.min.js" type="text/javascript"></script>
   <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/js/custom.js" type="text/javascript"></script>
   <!-- Подсветка стихов из Библии. Посетите http://ref.bble.ru/ для более детальной настройки. Данный код необходимо вставить непосредственно перед закрывающимся тегом </body> -->
   <script src="//api.bibleonline.ru/ref/bible.js" type="text/javascript" charset="utf-8" defer="defer"></script>
   <script>
@@ -149,8 +104,12 @@
         });
       }
     })(window);
-  </script>
 
+
+  </script>
+    <div class="visually-hidden">
+      {% include "partials/counters.njk" %}
+    </div>
 </body>
 
 </html>

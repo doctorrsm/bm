@@ -1,0 +1,44 @@
+.main-nav {
+  @media (max-width: ($screen-tablet - 1px)) {
+    display: none;
+  }
+}
+
+.main-nav--visible {
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #c1c1c1;
+
+  @media (min-width: $screen-tablet) {
+    border: none;
+  }
+}
+
+.main-nav__link {
+  padding: 10px 15px;
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+
+  &:hover {
+    color: #c1dcff;
+  }
+
+  @media (min-width: $screen-tablet) {}
+}

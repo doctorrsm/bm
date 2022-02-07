@@ -1,8 +1,8 @@
 /* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
 
-@import 'https://fonts.googleapis.com/css?family=Roboto:300';
+/* @import 'https://fonts.googleapis.com/css?family=Roboto:300';
 @import 'https://fonts.googleapis.com/css?family=Lora';
-@import 'https://fonts.googleapis.com/css?family=Unna';
+@import 'https://fonts.googleapis.com/css?family=Unna'; */
 article,
 aside,
 details,
@@ -198,9 +198,9 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'Lora';
+  /* font-family: 'Lora';
   font-size: 14px;
-  line-height: 24px;
+  line-height: 24px; */
   color: #534c4c;
   background-color: #fafafa;
 }

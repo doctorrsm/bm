@@ -1,8 +1,8 @@
 /* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
 
-@import 'https://fonts.googleapis.com/css?family=Roboto:300';
+/* @import 'https://fonts.googleapis.com/css?family=Roboto:300';
 @import 'https://fonts.googleapis.com/css?family=Lora';
-@import 'https://fonts.googleapis.com/css?family=Unna';
+@import 'https://fonts.googleapis.com/css?family=Unna'; */
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -1863,17 +1863,7 @@ blockquote small {
 /* ========================================================================
    Component: Article
  ========================================================================== */
-/*
- * Micro clearfix to make articles more robust
- */
-.uk-article:before,
-.uk-article:after {
-  content: "";
-  display: table;
-}
-.uk-article:after {
-  clear: both;
-}
+
 /*
  * Remove margin from the last-child
  */
@@ -10507,8 +10497,8 @@ html {
  */
 .tm-totop-scroller {
   display: block;
-  position: absolute;
-  top: 20px;
+  margin-left: auto;
+
   right: 20px;
   z-index: 1000;
   width: 20px;
@@ -10521,8 +10511,9 @@ html {
   transition: all linear 0.05s;
 }
 .tm-totop-scroller:after {
-  content: "\f077";
-  font-family: "FontAwesome";
+  content: "Вверх";
+  margin: 15px;
+  /* font-family: "FontAwesome"; */
 }
 /*
  * Hover
@@ -10976,13 +10967,7 @@ html {
 body {
   background: #878e94;
 }
-/* Large screen and bigger */
-@media (min-width: 1220px) {
-  body {
-    background: #878e94 url(../../../images/background/grey_bg.jpg) 50% 0 fixed;
-    background-size: cover;
-  }
-}
+
 /*
  * Default Style
  */

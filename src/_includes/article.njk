@@ -1,0 +1,20 @@
+{% extends "index.njk" %}
+
+{% block main %}
+<main class="page__main page__main--sidebar">
+  <div class="container">
+    {{ content | safe }}
+    {% block main_footer %}
+    {% endblock %}
+    <aside class="page__main-sidebar">
+      <h2 class="promo__title">Важные статьи для христиан</h2>
+      <ul class="promo__list">
+        {%- for post in collections.common -%}
+        <li class="promo__item"> <a href="{{ post.url }}" class="promo__link">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </aside>
+  </div>
+
+</main>
+{% endblock %}

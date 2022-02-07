@@ -1,0 +1,62 @@
+.page {
+  @media (min-width: $screen-tablet) {
+    font-size: 19px;
+    line-height: 1.24;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 20px;
+    line-height: 1.33;
+  }
+}
+
+.page__header {
+  background-color: #ffffff;
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 15px;
+  }
+}
+
+.page__main {
+  .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+  }
+}
+
+.page__main--sidebar {
+  article {
+    background-color: #fff;
+
+    @media (min-width: $screen-desktop) {
+      padding: 50px;
+      padding: 50px 200px;
+    }
+  }
+}
+
+.page__main--sidebar .container {
+  @media (min-width: $screen-desktop) {
+    background-color: transparent;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 10px;
+  }
+}
+
+.page__main-sidebar {
+  background-color: #fff;
+
+
+  @media (min-width: $screen-desktop) {
+    padding: 15px;
+    background-color: transparent;
+    color: lightcyan;
+    width: 320px;
+  }
+
+
+}

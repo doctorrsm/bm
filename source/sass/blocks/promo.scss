@@ -1,0 +1,58 @@
+.promo__title {
+  @media (min-width: $screen-desktop) {
+    color: lightcyan;
+  }
+}
+
+.promo__list {
+  @include list-reset;
+
+  @media (min-width: $screen-desktop) {
+    position: sticky;
+    top: 20px;
+  }
+}
+
+.promo__item {
+  border: 1px solid;
+  margin-bottom: 10px;
+
+  @media (min-width: $screen-desktop) {
+    border: 1px solid;
+    margin-bottom: 10px;
+  }
+}
+
+.promo__link {
+
+  display: block;
+  padding: 15px;
+  background-color: #2e2532;
+  color: #fbfbfb;
+
+  &:hover,
+  &:focus {
+    color: #2e2532;
+    background-color: #fbfbfb;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-desktop) {
+    color: lightcyan;
+
+    &:hover,
+    &:focus {
+      color: #fbfbfb;
+      background-color: #2e2532;
+      text-decoration: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

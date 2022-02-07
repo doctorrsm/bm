@@ -1,0 +1,49 @@
+.navbar {
+  padding: 15px 0;
+  background-color: #718096;
+}
+
+.navbar__container {
+  position: relative;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navbar__logo {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 10px 0;
+  display: inline-flex;
+  color: #c1dcff;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 40px;
+  }
+}
+
+.nabar__menu-toggler {
+  @include button-reset;
+  position: absolute;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/icons/menu.png");
+  top: 15px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
