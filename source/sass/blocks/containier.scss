@@ -10,3 +10,9 @@
     margin: 0 auto;
   }
 }
+
+.container--width {
+  @media (min-width: $screen-desktop) {
+    max-width: 1440px;
+  }
+}

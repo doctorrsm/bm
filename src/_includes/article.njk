@@ -1,20 +1,91 @@
 {% extends "index.njk" %}
 
-{% block main %}
-<main class="page__main page__main--sidebar">
-  <div class="container">
-    {{ content | safe }}
-    {% block main_footer %}
-    {% endblock %}
-    <aside class="page__main-sidebar">
-      <h2 class="promo__title">Важные статьи для христиан</h2>
-      <ul class="promo__list">
-        {%- for post in collections.common -%}
-        <li class="promo__item"> <a href="{{ post.url }}" class="promo__link">{{ post.data.title }}</a></li>
-        {%- endfor -%}
-      </ul>
-    </aside>
-  </div>
 
-</main>
+
+{% block navbar %}
+<div class="navbar">
+  <div class="navbar__container container container--width">
+    <a class="navbar__logo" href="/">Тайны Библии</a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/nashe-video">Наше видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/blog-main">Блог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/stati">Статьи</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/instrumenty">Инструменты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/bs">Библейские сюжеты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/karta-sajta">Карта сайта</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="nabar__menu-toggler">
+      <span class="visually-hidden">Переключатель состояния меню</span>
+    </button>
+  </div>
+</div>
 {% endblock %}
+
+
+{% block main %}
+
+
+{% if title === "Home" %}
+<div class="home">
+  {% endif %}
+
+
+  <main class="page__main page__main--sidebar">
+    <div class="container">
+      {{ content | safe }}
+      {% block main_footer %}
+      {% endblock %}
+      <aside class="page__main-sidebar">
+        {% block aside %}
+        {% if tags.includes("jesus") %}
+            <h2 class="promo__title">Глубокое изучение жизни и учения Иисуса:</h2>
+                    <ul class="promo__list">
+                      {%- for post in collections.jesus -%}
+                      <li class="promo__item">
+                        <a href="{{ post.url }}" class="promo__link">{{ post.data.title }}</a>
+                      </li>
+                      {%- endfor -%}
+                    </ul>
+
+
+        {% elseif tags.includes("last") %}
+            <h2 class="promo__title">Христианство в последние дни</h2>
+            <ul class="promo__list">
+              {%- for post in collections.last -%}
+              <li class="promo__item">
+                <a href="{{ post.url }}" class="promo__link">{{ post.data.title }}</a>
+              </li>
+              {%- endfor -%}
+            </ul>
+        {% else %}
+              <h2 class="promo__title">Важные статьи для христиан</h2>
+              <ul class="promo__list">
+                {%- for post in collections.common -%}
+                <li class="promo__item">
+                  <a href="{{ post.url }}" class="promo__link">{{ post.data.title }}</a>
+                </li>
+                {%- endfor -%}
+              </ul>
+        {% endif %}
+
+
+        {% endblock %}
+      </aside>
+    </div>
+
+  </main>
+  {% endblock %}

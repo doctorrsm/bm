@@ -3,3 +3,4 @@ var menu = document.querySelector('.main-nav');
 button.onclick = function() {
   menu.classList.toggle('main-nav--visible');
 }
+

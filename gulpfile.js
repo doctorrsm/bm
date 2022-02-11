@@ -1,4 +1,5 @@
 import gulp from "gulp";
+import plumber from 'gulp-plumber';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
@@ -60,22 +61,24 @@ export function beauty() {
     }));
 }
 
+
 export function img() {
-  return src('./source/img/**/*.{jpg,png}')
+  return src('./src/images/**/*.{jpg,png}') //*.{jpg,png}
+  .pipe(plumber())
     .pipe(squoosh({
       //webp: {},
       //avif: {},
     }))
-    .pipe(dest('./build/img'));
+    .pipe(dest('./dist/images'));
 }
 
 export function webp() {
-  return src('./source/img/**/*.{jpg,png}')
+  return src('./src/images/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {},
       avif: {},
     }))
-    .pipe(dest('./build/img'));
+    .pipe(dest('./dist/images'));
 }
 export function svg() {
   return src('./source/img/svg-sprite/*.svg')

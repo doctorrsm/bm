@@ -1,0 +1,58 @@
+.article--simphony {
+  h1 {
+    font-size: 42px;
+    line-height: 1;
+    font-family: inherit;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 50px;
+    border-bottom: 1px solid burlywood;
+  }
+
+  h3 {
+    margin-top: 50px;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  ul {
+    list-style: none;
+
+    @media (max-width: $screen-mobile) {
+      padding-left: 0;
+    }
+  }
+
+  li a {
+    display: block;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: -14px;
+    color: burlywood;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: -20px;
+    align-self: start;
+    margin-bottom: 25px;
+    pointer-events: none;
+
+    @media (max-width: $screen-mobile) {
+      pointer-events: none;
+    }
+
+
+  }
+
+  li {
+    padding: 30px;
+    background: #f2f2f2;
+    border: 1px dashed #8080804f;
+    margin-bottom: 8px;
+
+  }
+}

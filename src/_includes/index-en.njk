@@ -1,0 +1,26 @@
+{% extends "index.njk" %}
+
+ {% block navbar %}
+    <div class="navbar">
+      <div class="navbar__container container">
+        <a class="navbar__logo" href="/en/">The Mysteries of the Bible</a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/en/articles/">Articles</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/en/bible-stories/">Biblical stories</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nabar__menu-toggler">
+          <span class="visually-hidden">Visibility switch</span>
+        </button>
+      </div>
+    </div>
+    {% endblock %}
+
+     {% block copytight %}
+      <p>Mysteries of the Bible. The New Understanding of Scripture (Daniel 12:4)</p>
+       {% endblock %}

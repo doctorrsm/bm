@@ -1,0 +1,75 @@
+.categories {}
+
+.categories__list {
+  @include list-reset;
+}
+
+.categories__item {
+  margin-bottom: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 34px;
+  background: blueviolet;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+  overflow: hidden;
+
+  &:hover {
+    position: relative;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+  }
+
+}
+
+.categories__item--mystery {
+  background-image: url("/images/Kazni.jpg");
+}
+
+.categories__item--bible-questions {
+  background-image: url("/images/OhCTAbar6G8.jpg");
+}
+
+.categories__item--mathew {
+  background-image: url("/images/base_image.jpg");
+}
+
+.categories__item--navigator {
+  background-image: url("/images/XramS.jpg");
+}
+
+.categories__item--christian-history {
+  background-image: url("/images/chuma.jpg");
+}
+
+.categories__title {
+  font-family: inherit;
+  margin: 0;
+  display: block;
+  padding: 30px 30px 30px 30px;
+  color: blueviolet;
+  font-size: 30px;
+  background-color: #ffffff;
+  transition: all 0.2s;
+
+
+}
+
+.categories__link {
+
+  padding-top: 150px;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 250px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 320px;
+  }
+}

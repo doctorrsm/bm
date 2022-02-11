@@ -32,6 +32,11 @@
 
     @media (min-width: $screen-desktop) {
       padding: 50px;
+
+    }
+
+    @media (min-width: 1300px) {
+
       padding: 50px 200px;
     }
   }
