@@ -1,1 +1,1 @@
-Sitemap: http://bible-mystery.com/sitemap.xml
+Sitemap: https://bible-mystery.com/sitemap.xml

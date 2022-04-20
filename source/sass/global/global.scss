@@ -48,3 +48,21 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.next_article {
+  display: block;
+  padding: 32px 10px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  color: #00aeec;
+  text-decoration: underline;
+  font-weight: bold;
+font-size: 24px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #00aeec;
+    text-decoration: none;
+  }
+}
+

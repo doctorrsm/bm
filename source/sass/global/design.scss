@@ -1,0 +1,19 @@
+.marked {
+  background-color: var(--marked);
+}
+
+.marked-block {
+  background-color: #FCF6D6;
+  color: #062729;
+  padding: 15px;
+  border: 1px solid #D6CCCC;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.marked-list {
+  background-color: #e3f1fb;
+  padding: 25px;
+  border-top: 5px solid #00bef7;
+  border-bottom: 5px solid #00bef7;
+}

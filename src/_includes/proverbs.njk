@@ -1,6 +1,14 @@
 {% extends "index.njk" %}
 
+{% set previousPost = collections.proverbs | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.proverbs | getNextCollectionItem(page) %}
+
 {% block main_footer %}
+{% if previousPost %}<a class="next_article" href="{{  previousPost.url  }}">Следующая: {{ previousPost.data.title }}</a>{% endif %}
+{% if title == 'Притча о блудном сыне' %}<a class="next_article" href="/bs/pritchi-iisusa/219-pritcha-o-seyatele/">Следующая: Притча о сеятеле</a>{% endif %}
+
+
+
 <div class="uk-panel uk-panel-box uk-panel-box-secondary">
   <div class="uk-text-center" style="max-width: 300px; margin-left: auto; margin-right: auto; background-color: #00aeec; padding: 15px; border-radius: 30px;">
     <p>

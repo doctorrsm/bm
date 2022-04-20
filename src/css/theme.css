@@ -1421,7 +1421,7 @@ blockquote small {
 .uk-panel-box-primary {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png');
+  /* background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png'); */
   box-shadow: 0 1px 3px rgba(30, 50, 70, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
   /* link color */
@@ -1554,7 +1554,7 @@ blockquote small {
 .uk-panel-box-secondary {
   background-color: rgba(45, 55, 70, 0.15);
   color: #ffffff;
-  background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png');
+  /* background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png'); */
   box-shadow: 0 1px 3px rgba(15, 24, 34, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   /* link color */
@@ -2323,7 +2323,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png');
+  /* background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png'); */
   box-shadow: 0 1px 3px rgba(30, 50, 70, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 /*
@@ -10472,7 +10472,7 @@ html {
   position: relative;
   padding: 30px;
   background: rgba(255, 255, 255, 0.1);
-  background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png');
+  /* background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png'); */
   box-shadow: 0 1px 3px rgba(30, 50, 70, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   color: #ffffff;
   text-align: center;
@@ -10553,7 +10553,7 @@ html {
 }
 .uk-panel-tab .uk-tab {
   background: rgba(255, 255, 255, 0.1);
-  background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png');
+  /* background-image: url('../../../less/uikit/images/grey/panel-box-noise-bg.png'); */
   box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 .uk-panel-tab .uk-tab > li > a {

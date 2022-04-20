@@ -2,6 +2,16 @@
 <html lang="ru">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48122865-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-48122865-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,7 +35,7 @@
   <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
   <link rel="stylesheet" href="/css/theme.css?v=1.1">
   <link rel="stylesheet" href="/css/custom.css?v=1.1">
-  <link rel="stylesheet" href="/css/style.css?v=1.1">
+  <link rel="stylesheet" href="/css/style.css?v=1.2">
 </head>
 
 <body class="page">
@@ -114,7 +124,7 @@
   </script>
 
     <div class="visually-hidden">
-      {# include "partials/counters.njk" #}
+      {% include "partials/counters.njk" %}
     </div>
 </body>
 
