@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru" style="background-color: #f4f4f9;">
+
+<head>
+  <meta name="description" content="Превращает сокрщаения библейских стихов в полноценные стихи Библии" />
+  <meta charset="utf-8">
+  <title>Транскриптор библейских стихов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Рутковский Cергей">
+  <style>
+  [v-cloak] {
+    display: none;
+
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  </style>
+
+</head>
+
+<body style="color: #6c757d; font-family: sans-serif;">
+
+{{ content | safe}}
+<div class="visually-hidden">
+  {% include "partials/counters.njk" %}
+</div>
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="/js/transkryptor.js" type="text/javascript"></script>
+</body>
+</html>

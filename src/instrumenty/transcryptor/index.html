@@ -1,0 +1,59 @@
+---
+lang: ru-ru
+keywords: Транскриптор Библейских Стихов
+title: Транскриптор Библейских Стихов
+author: Сергей Рутковский
+description: Тайны Библии
+page-full-url: /transcryptor
+layout: transcryptor.njk
+---
+{% raw %}
+<h2 style="color: #182633;">Транскриптор библейских стихов</h2>
+<div id="app" v-cloak>
+  <section>
+      <fieldset >
+          <legend>Разделение стихов:</legend>
+          <label><input v-on:change="setSeparation"  type="radio" name="separate" value="show" checked>В один абзац</label>
+          <label><input v-on:change="delSeparation"  type="radio" name="separate" value="hide">Каждый стих с новой строки</label>
+      </fieldset>
+      <fieldset>
+          <legend>Показывать номера стихов:</legend>
+          <label><input v-on:change="setNumber" type="radio" name="verseNumber" value="show" checked>Показывать</label>
+          <label><input v-on:change="delNumber" type="radio" name="verseNumber" value="hide">Скрывать</label>
+      </fieldset>
+      <fieldset v-if="verseNumber">
+          <legend>Точка после номера стиха:</legend>
+          <label><input v-on:change="dotted = !dotted" type="radio" name="dotted" value="show" checked>Ставить</label>
+          <label><input v-on:change="dotted = !dotted" type="radio" name="dotted" value="hide">Скрывать</label>
+      </fieldset>
+  </section>
+  <p>Пример: Луки 6:3,4; 10:4,6-8; 1Цар 21:4-6; Евр 7:14,15; Евр 2:11-13; </p>
+  <ol>
+      <li>Главы разделяются с помощью точки с запятой - ;</li>
+      <li>Не обязательно дублировать название книги, если следующая глава принадлежит той же книги. Луки 6:3,4; 10:4,6-8; </li>
+      <li>Книгу Иисуса Навина пишите в одну слово "Нв, нав, навин" и т.д</li>
+      <li>Песня песней - "Пс, пес песн" и т.д</li>
+      <li>Плач Иеремии - "Пл, плач" и т.д</li>
+      <li>Филимону - или "Фм" или "Филим"; Филиппийцам - или "Фп" или "Филип"</li>
+      <li>Между именем книги и главой должен быть пробел. Луки 6:3; Неправильно писать так <del>Лк6:3</del></li>
+      <li>Если вы допустите ошибку - скрипт просто не выведет стихи</li>
+  </ol>
+  <textarea style="width: 100%" v-bind:placeholder="placeholder" v-model="input" v-on:keydown.enter="inputV">матфея 40:33; Луки 12:2-43;</textarea>
+  <button type="button" v-on:click="inputV">Расшифровать</button>
+
+  <template id="bible-verse">
+      <p class="bible-verse"> </p>
+      <li><a href=""></a></li>
+  </template>
+
+  <p style="border: 1px solid #f93a0b; margin-bottom: 15px; padding: 15px; max-width: 800px; color: #182633;" v-for="quote in versesList">
+
+      <template  v-for="verse in quote.verses">
+          <template v-if="verseNumber">{{verse}}<template v-if="dotted">.</template></template> {{ arrayWithBible[quote.bookId]['Chapters'][quote.chapter-1]['Verses'][verse-1]['Text'] }} <template v-if="separate"><br></template>
+      </template >
+
+     ({{ quote.bookName }} {{quote.chapter}}:{{ quote.fullVerses}})
+  </p>
+
+</div>
+{% endraw %}
