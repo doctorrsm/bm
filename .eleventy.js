@@ -1,3 +1,4 @@
+/* Importing the plugins. */
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const shuffle  = require("just-shuffle");
 const nunjucks = require('nunjucks');

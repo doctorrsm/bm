@@ -209,15 +209,16 @@ Vue.createApp({
           if (verse.includes('-')) {
             let splitedVerse = [];
             verse = verse.split('-');
-            let startVerse = verse[0];
-            let finishVerse = verse[1];
-            while ((startVerse <= finishVerse) && (this.arrayWithBible[bookId]['Chapters'][chapter - 1]['Verses'][startVerse - 1])) {
+            let startVerse = Number(verse[0]);
+            let finishVerse = Number(verse[1]);
+            while (startVerse <= finishVerse)  {
+                if ( (this.arrayWithBible[bookId]['Chapters'][chapter - 1]['Verses'][startVerse - 1])) {
+
+                  verses.push(startVerse)
 
 
-              verses.push(startVerse)
+                }
               startVerse++;
-
-
             }
           } else {
             if (this.arrayWithBible[bookId]['Chapters'][chapter - 1]['Verses'][verse - 1]) {
@@ -225,11 +226,10 @@ Vue.createApp({
               return true
             }
           }
-
-
-        })
+        });
 
         //
+
         if (verses.length === 0) {
           return;
         } else {
